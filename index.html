@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Etch-a-Sketch</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="title">Etch-a-Sketch</h1>
+    </header>
+    <div class="app">
+      <div class="controls">
+        <button class="basic">Basic</button>
+        <button id="color-picker">Pick Color</button>
+        <button class="random">Random Colors</button>
+        <button class="real">Realistic</button>
+        <button class="resize">Resize</button>
+        <button class="clear">Clear</button>
+        <div class="check-button">
+          <input id="click-check" type="checkbox" checked />Hold Click to
+          Draw<br />
+        </div>
+      </div>
+      <div class="colors">
+        <div class="current"></div>
+        <div class="color red" data-color="red"></div>
+        <div class="color yellow" data-color="yellow"></div>
+        <div class="color blue" data-color="blue"></div>
+        <div class="color green" data-color="green"></div>
+        <div class="color black" data-color="black"></div>
+        <div class="color white" data-color="white"></div>
+      </div>
+      <div class="container-sketch"></div>
+    </div>
+    <script src="https://unpkg.com/vanilla-picker@2"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
